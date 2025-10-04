@@ -1,29 +1,23 @@
 'use strict';
 
 const pushNotification = (posTop, posRight, title, description, type) => {
-
   const notification = document.createElement('div');
 
   notification.classList.add('notification', type);
-
 
   const heading = document.createElement('h2');
 
   heading.classList.add('title');
   heading.textContent = title;
 
-
   const paragraph = document.createElement('p');
 
   paragraph.textContent = description;
 
-
   notification.appendChild(heading);
   notification.appendChild(paragraph);
 
-
   document.body.appendChild(notification);
-
 
   notification.setAttribute(
     'style',
