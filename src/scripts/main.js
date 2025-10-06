@@ -21,7 +21,7 @@ const pushNotification = (posTop, posRight, title, description, type) => {
 
   notification.setAttribute(
     'style',
-    `position: absolute; top: ${posTop}px; right: ${posRight}px;`,
+    ` top: ${posTop}px; right: ${posRight}px;`,
   );
 
   setTimeout(() => {
